@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Text Style Changer</title>
+
+    <!-- DaisyUI + Tailwind -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+
+  <body
+    class="bg-sky-500/50 text-white min-h-screen flex items-center justify-center p-6"
+  >
+    <div class="bg-sky-500/100 p-8 rounded-2xl shadow-2xl w-full max-w-2xl">
+
+      <h2 class="text-3xl font-bold text-center mb-6">
+        Text Style Changer
+      </h2>
+
+      <!-- Controls -->
+      <div class="grid md:grid-cols-3 gap-4 mb-8">
+
+        <!-- Font Size -->
+        <div>
+          <label class="block mb-2 font-semibold">
+            Font Size
+          </label>
+
+          <select id="fontSize" class="select select-primary w-full bg-white text-black">
+            <option value="24px">Small</option>
+            <option value="40px" >Medium</option>
+            <option value="60px">Large</option>
+          </select>
+        </div>
+
+        <!-- Font Color -->
+        <div>
+          <label class="block mb-2 font-semibold">
+            Font Color
+          </label>
+
+          <select id="fontColor" class="select select-secondary w-full bg-white text-black">
+            <option value="white">White</option>
+            <option value="red">Red</option>
+            <option value="yellow">Yellow</option>
+            <option value="lightgreen">Green</option>
+            <option value="skyblue">Blue</option>
+          </select>
+        </div>
+
+        <!-- Font Family -->
+        <div>
+          <label class="block mb-2 font-semibold">
+            Font Family
+          </label>
+
+          <select id="fontFamily" class="select select-accent w-full bg-white text-black">
+            <option value="Arial">Arial</option>
+            <option value="Courier New">Courier New</option>
+            <option value="Georgia">Georgia</option>
+            <option value="Verdana">Verdana</option>
+            <option value="Times New Roman">Times New Roman</option>
+          </select>
+        </div>
+
+      </div>
+
+      <!-- Text Block -->
+      <div class="bg-gray-700 rounded-xl p-8 text-center">
+        <h1 id="textBlock" class="text-4xl font-bold">
+          DOM Manipulation is Powerful 
+        </h1>
+      </div>
+
+    </div>
+
+    <!-- External JavaScript -->
+    <script src="index.js"></script>
+  </body>
+</html>
