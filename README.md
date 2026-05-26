@@ -1,0 +1,1 @@
+Text Style Changer app enables users to change text size, color and font of a text.
